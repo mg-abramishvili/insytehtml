@@ -1,0 +1,214 @@
+body {
+    background-color: #0062AF;
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+}
+
+.btn-standard {
+    background-color: #0062AF;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.bg-l {
+    background-color: #ecf1f5;
+}
+
+.p1 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.title-head {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+/* HEADER */
+.header-top {
+    padding: 10px 0;
+}
+.header-logo {
+    flex: 0 0 auto;
+    width: 20%;
+}
+.header-logo a {
+    display: block;
+}
+.header-logo a img {
+    width: 100%;
+}
+.header-address {
+    flex: 0 0 auto;
+    width: 40%;
+    text-align: right;
+}
+.header-tel {
+    flex: 0 0 auto;
+    width: 20%;
+    text-align: right;
+}
+.header-tel a {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0062AF;
+    text-decoration: none;
+}
+.header-button {
+    flex: 0 0 auto;
+    width: 20%;
+    text-align: right;
+}
+.header-bottom {
+    border-top: none;
+}
+@media (min-width: 992px) {
+    .header-bottom {
+        border-top: 1px solid rgba(0, 98, 175, 0.15);
+    }
+}
+.header-bottom-menu .bg-light {
+    background: none !important;
+}
+.header-bottom-menu .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+@media (min-width: 992px) {
+    .header-bottom-menu .navbar {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+.header-bottom-menu .navbar-nav {
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+.header-bottom-menu .navbar-nav .nav-link {
+    color: #151515;
+    font-weight: 600;
+    padding: 6px 10px;
+}
+.header-bottom-menu .navbar-nav .nav-link:hover,
+.header-bottom-menu .navbar-nav .nav-link:focus {
+    color: #0062AF;
+}
+/* HEADER */
+
+/* CAROUSEL */
+#main-carousel .carousel-item {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+#main-carousel .carousel-item-image {
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    position: relative;
+}
+#main-carousel .carousel-item-video {
+    position: relative;
+    height: 100%;
+}
+#main-carousel .carousel-item-image:before,
+#main-carousel .carousel-item-video:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, rgba(4,69,87,0.7), rgba(4,30,56,0.4));
+}
+#main-carousel video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#main-carousel .carousel-caption {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    color: #fff;
+    z-index: 2;
+}
+#main-carousel .carousel-caption h5 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+}
+#main-carousel .carousel-caption p {
+    font-size: 22px;
+}
+/* CAROUSEL */
+
+/* MAIN PREIM */
+.main-preim-list {
+    display: flex;
+    justify-content: space-between;
+}
+.main-preim-list-item svg {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    color: #0062AF;
+}
+/* MAIN PREIM */
+
+/* MAIN FEATURES */
+.main-features-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.main-features-item h4 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.main-features-item p {
+    margin-bottom: 40px;
+}
+/* MAIN FEATURES */
+
+/* MAIN PORTFOLIO */
+.carousel {
+    margin-bottom: 10px;
+}
+.carousel-cell {
+    width: 100%;
+    height: 400px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-nav .carousel-cell {
+    height: 80px;
+    width: 80px;
+    border: 3px solid transparent;
+}
+.carousel-nav .carousel-cell:before {
+    font-size: 50px;
+    line-height: 80px;
+}
+.carousel-nav .carousel-cell.is-nav-selected {
+    border-color: #0062AF;
+}
+/* MAIN PORTFOLIO */
